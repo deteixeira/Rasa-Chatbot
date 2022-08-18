@@ -1,0 +1,232 @@
+version: "3.1"
+nlu:
+- intent: user_confirm
+  examples: |
+    - I am
+    - I do
+    - sure
+    - absolutely
+    - yess
+    - of course
+    - yes
+    - i am
+    - I have
+    - constantly
+    - i have
+    - i do
+- intent: user_oppose
+  examples: |
+    - I am not
+    - I do not
+    - I have not
+    - not really
+    - never
+    - noo
+    - Wouldn't say so
+    - not at all
+    - no
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: say_name
+  examples: |
+    - debora
+    - debs
+    - francisco
+    - cristina
+    - joao
+    - will
+    - rui
+    - maria
+    - beatriz
+    - alexandre
+    - nuno
+    - hugo
+    - joana
+    - dina
+    - afonso
+    - marta
+    - joao francisco
+    - ana maria
+    - I am {name}
+    - chico
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - okay bye
+    - ok bye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: mood_great
+  examples: |
+    - perfect
+    - good
+    - okay
+    - fine
+    - nice
+    - great
+    - amazing
+    - feeling like a king
+    - I am okay
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_sad
+  examples: |
+    - bad
+    - sad
+    - burned out
+    - I'm feeling burned out
+    - feeling awful
+    - depressed
+    - I am depressed
+    - I am tired
+    - I am stressed
+    - I hate my life
+    - super sad
+    - extremely depressed
+    - I'm in burnout
+    - so awful
+    - so tired
+    - i'm sad
+    - i'm feeling bad
+    - i'm stressed
+- intent: mood_pressured
+  examples: |
+    - I've been feeling pressured
+    - I feel pressured
+    - The reason is pressure
+    - Pressure
+    - Coerced
+    - I feel stressed because of pressure
+- intent: mood_covid
+  examples: |
+    - Covid
+    - covid-19
+- intent: mood_p_problems
+  examples: |
+    - Personal Problems
+    - my own problems
+- intent: mood_college
+  examples: |
+    - College
+    - my studies
+- intent: reason_for_pressure
+  examples: |
+    - my parents
+    - myself
+    - teachers
+    - my mum
+    - my dad
+    - father
+    - mother
+    - self pressure
+    - family
+    - friends
+    - society
+    - I feel like everyone puts pressure on me.
+    - My family definitely
+    - me
+- intent: explain_pressure_reason
+  examples: |
+    - I feel like people expect too much of me
+    - Pressure put on me by the professors and the degree of demand from the subjects
+    - I am always feeling like I am under pressure
+    - Society makes me feel like it
+    - Pressure to be successful
+    - I want to succeed in life
+    - The amount of work to be done and topics to study
+    - I am always pushing myself to be better or do better
+    - Pressure to do a good job
+    - Worring about life after graduation
+    - Wanting to be the best
+    - Wanting to have good grades
+    - I want to finish my studies to start working
+    - There is pressure all the time
+    - The pressure from society we feel to get good grades and be successful in order to get a good job
+    - A lot of pressure, close deadlines between courses and few time to study the lessons needed
+    - Future
+    - Professors have high hopes on me and expect a lot of me and I want to correspond. I am ambitious.
+    - I spend 14 hours a day studying, I am under a huge amount of pressure and I have zero time to myself
+    - I feel it is too much pressure sometimes. Moreover, I feel I don't even have the time to enjoy much more important things in life, like spending time with family.
+    - The level of expectations is so high that we keep pushing ourselfs to try reaching them but for real we get frustrated because when you are almost reaching your goals they just get harder.
+    - Because i want to succeed and i put pressure on myself
+    - I always want to do better than last time and I pressure myself to be better all the time
+    - I feel like my parents are always on top of my grades and keep pressuring me to do better each time
+    - because school keeps getting harder and I struggle to keep up so I pressure myself
+    - I try to always do my best but sometimes the results are not good so I push myself harder and harder
+    - Always trying to be better, family pressure
+    - Pressure to do a good job and after graduation situation
+- intent: explain_college_reason
+  examples: |
+    - I compare myself a lot with my peers
+    - Due to not having motivation to do it, nor having the time/circurstances to enjoy life in general. It feels like all I do is for the better of my future. I am constantly in a struggle of not studying due to no motivation, but not doing anything else either, since I always carry the weight of not being productive, getting myself into an infinite loop to nowhere with no way out.
+    - Because I usually can't study everything until the last few days and then I feel like I won't have time to study/learn everything
+    - College makes me feel too tired
+    - It mostly happens when there are too many deadlines in a short span of time, and because of that there is little to no time to rest
+    - Very large workload which leads to little time to rest
+    - Sometimes it feels like it's impossible to get everything done. And it seems like it will never end.
+    - It takes most of my time. No time to be with friends, go out, have fun, enjoy life. I'm always either studying or feeling bad for taking a break
+    - I don't always feel like I accomplish much by studying.
+    - Too much to study in a short period of time
+    - Lots of work to do in such a few time especially in these last years. For example in quarantine times, the only thing that I did was study and go to online classes which was very tiring because the only thing that went through my head during that time was that I had to study more and more, and things that were outside the studies area were left behind
+    - Because it is overwhelming
+    - Sometimes they ask too much in little time
+    - The amount of time it takes from my day, having too many evaluations clustered together increases my stress
+    - Too many demanding classes that consume too much time, with no room for rest
+    - Studying too much
+    - With the number of projects and tests that we must deal at the same time it is impossible to have time to relax. This along with the continuous work along the semester gives no time for pauses for a long period of time, which at some point, makes me feel completely exhausted. Also, online classes contributed to my lack of interest in continuing my studies so everything related to college is now an obligation.
+    - It requires a lot of time and effort and sometimes it doesn't feel rewarding. Im expected to prioritize it above other aspects of my life, over other hobbies that make me happier but are not deemed worthy.
+    - Because we never have time for a break, we don't even have time to plan our future just because we are always studying.
+    - Too much workload and not loving what I am studying
+    - Because there is a lot to do in a very small time
+    - Too many things to learn and a lot of work to handle in few time
+    - Because sometimes I feel the system is too old tailored toward old teaching methods where teachers don't feel the need or want to change, but each time in each semester expect us to reinvent the "wheel"
+    - So much hard work that does not pay off
+    - Close deadlines between courses
+    - It takes time away from the stuff who keeps me going, and if I stop working I feel bad cause I should be studying
+    - I don't like it but I want to do well and there is too much work
+    - When the weather is good I like to be in the outside doing stuff, and when I have to study in those sunny days, those are the days that I feel more done, especially studying for exams
+    - Because studying consumes a lot of time and energy, and sometimes I don't get the results I was expecting
+    - Because I spend 14 hours a day studying and I have zero time to myself
+    - The amount of work since the beginning of the semester is too much and nobody cares for our mental health
+    - I don't even have the time to enjoy much more important things in life, like spending time with family.
+    - I don't feel the same way about college anymore
+    - The passion for the area is gone
+    - Sometimes the topics are not interesting nor important for my future
+    - Having to focus on a study session is difficult for me
+    - I have to do lots of work for the courses and I loose my free time to be with my friends and family
+    - College is always demanding more projects to be done and a lot to be studied
+    - Having to spend all my time studying takes all the time I have for things I actually enjoy and that stresses me
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
