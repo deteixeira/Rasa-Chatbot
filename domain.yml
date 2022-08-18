@@ -1,0 +1,103 @@
+version: '3.1'
+intents:
+- bot_challenge
+- explain_college_reason
+- explain_pressure_reason
+- goodbye
+- greet
+- mood_college
+- mood_covid
+- mood_great
+- mood_p_problems
+- mood_pressured
+- mood_sad
+- reason_for_pressure
+- say_name
+- user_confirm
+- user_oppose
+entities:
+- name
+slots:
+  name:
+    type: text
+    mappings:
+    - type: custom
+      intent: action_save_name
+responses:
+  utter_greet:
+  - text: Hey! What is your name?
+  utter_happy:
+  - text: Great, carry on!
+  - text: Good to know!
+  utter_sad:
+  - text: Why are you feeling like this?
+    buttons:
+    - title: Pressure
+      payload: /mood_pressured
+    - title: Covid
+      payload: /mood_covid
+    - title: Personal Problems
+      payload: /mood_p_problems
+    - title: College
+      payload: /mood_college
+  utter_not_burnedout:
+  - text: Perhaps I am not the best helper for your situation.
+  - text: I'm sorry to hear that. However I'm a chatbot focused on burnout. Maybe I am not the best option for you.
+  utter_is_burnedout:
+  - text: Are you experiencing burnout?
+  - text: I'm sorry to hear that. Do you feel burnedout?
+  utter_pressure_begin:
+  - text: Pressure can be hard to deal with. Who do you believe puts pressure on you?
+  utter_why_reason:
+  - text: Explain to me why you feel like you are being pressured...
+  utter_covid_begin:
+  - text: Covid can be hard to deal with.
+  utter_p_problems_begin:
+  - text: Personal problems can be hard to deal with.
+  utter_college_begin:
+  - text: College can be hard to deal with. What makes you feel this way in college?
+  utter_sorry_for_pressure:
+  - text: It is great that you acknowledge your feelings without judgement. Is there anything that you do to help you manage pressure?
+  utter_good_to_know:
+  - text: Good to know! Would you still like a few advices?
+  utter_advices_pressure:
+  - text: I can give you some advices, is that something you would want?
+  utter_first_advice_pressure:
+  - text: First, you could try give yourself some breaks to relax and do something you enjoy. A simple walk could help a lot.
+  utter_second_advice_pressure:
+  - text: Some people find comfort in meditation. It teaches techniques to relax. Here is a great starting point for meditation - https://www.mindful.org/how-to-meditate/
+  utter_third_advice_pressure:
+  - text: Try to get at least 7 hours of good sleep.
+  utter_advice_therapy:
+  - text: Most important, if you are having trouble managing on your own, seek some professional help. Therapy is the best way to learn how to control your emotions and be at peace with yourself.
+  utter_college_major:
+  - text: Have you ever considered changing your major in college?
+  utter_changing_major_stress:
+  - text: And do you believe that thinking about changing your major is a source of stress to you?
+  utter_goodbye:
+  - text: Bye
+  - text: See you!
+  - text: Goodbye!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_save_name
+- utter_advice_therapy
+- utter_advices_pressure
+- utter_changing_major_stress
+- utter_college_begin
+- utter_college_major
+- utter_first_advice_pressure
+- utter_good_to_know
+- utter_goodbye
+- utter_greet
+- utter_is_burnedout
+- utter_pressure_begin
+- utter_sad
+- utter_second_advice_pressure
+- utter_sorry_for_pressure
+- utter_third_advice_pressure
+- utter_why_reason
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
