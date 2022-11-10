@@ -18,6 +18,7 @@ In the other terminal, run the following command:
 
 After, open your project in the right directory. My directory is the following:
 - file:///C:/Users/debor/OneDrive/Documentos/faculdade/5%C2%BA%20ano/tese/c%C3%B3digo/RASA/bot2/index.html"
-but make sure you indicate the right directory where you saved the index.html file.
+
+but make sure you indicate the right directory where you saved the index.html file in your computer.
 
 Hope you enjoy :)
