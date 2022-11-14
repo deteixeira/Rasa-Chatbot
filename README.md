@@ -1,7 +1,7 @@
 # Rasa-Chatbot
 
 To run this project, you need to download:
-- Rasa version 3.1.0 (https://rasa.com/docs/rasa/installation/installing-rasa-open-source)
+- Rasa version 3.0.0 (https://rasa.com/docs/rasa/installation/installing-rasa-open-source)
 - Python 3.7.13
 
 (be aware that it is important to follow the steps to activate your conda environment. You can follow this tutorial if you need any help: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
